@@ -1,24 +1,23 @@
 [
   {
-    "Team1": "India",
-    "Team2": "Australia",
+    "Team1": "भारत",
+    "Team2": "ऑस्ट्रेलिया",
     "Date": "2026-02-15",
-    "Venue": "Melbourne Cricket Ground",
-    "Status": "Upcoming"
-   
+    "Venue": "मेलबर्न क्रिकेट ग्राउंड",
+    "Status": "आगामी"
   },
   {
-    "Team1": "Pakistan",
-    "Team2": "England",
+    "Team1": "पाकिस्तान",
+    "Team2": "इंग्लैंड",
     "Date": "2026-02-17",
-    "Venue": "Lord's Cricket Ground",
-    "Status": "Upcoming"
+    "Venue": "लॉर्ड्स क्रिकेट ग्राउंड",
+    "Status": "आगामी"
   },
   {
-    "Team1": "South Africa",
-    "Team2": "New Zealand",
+    "Team1": "दक्षिण अफ्रीका",
+    "Team2": "न्यूज़ीलैंड",
     "Date": "2026-02-20",
-    "Venue": "Eden Gardens",
-    "Status": "Upcoming"
+    "Venue": "ईडन गार्डन्स",
+    "Status": "आगामी"
   }
 ]
