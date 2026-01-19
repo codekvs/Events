@@ -1,0 +1,24 @@
+[
+  {
+    "Team1": "India",
+    "Team2": "Australia",
+    "Date": "2026-02-15",
+    "Venue": "Melbourne Cricket Ground",
+    "Status": "Upcoming"
+   
+  },
+  {
+    "Team1": "Pakistan",
+    "Team2": "England",
+    "Date": "2026-02-17",
+    "Venue": "Lord's Cricket Ground",
+    "Status": "Upcoming"
+  },
+  {
+    "Team1": "South Africa",
+    "Team2": "New Zealand",
+    "Date": "2026-02-20",
+    "Venue": "Eden Gardens",
+    "Status": "Upcoming"
+  }
+]

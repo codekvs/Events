@@ -1,0 +1,46 @@
+name: Sync Cricket Data
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm install
+      
+      - name: Fetch Google Sheets and convert to JSON
+        run: node scripts/sync.js
+        env:
+          MATCHES_SHEET_URL: ${{ secrets.MATCHES_SHEET_URL }}
+          HIGHLIGHTS_SHEET_URL: ${{ secrets.HIGHLIGHTS_SHEET_URL }}
+          ANNOUNCEMENTS_SHEET_URL: ${{ secrets.ANNOUNCEMENTS_SHEET_URL }}
+          TEAM_SHEET_URL: ${{ secrets.TEAM_SHEET_URL }}
+          FAMILY_SHEET_URL: ${{ secrets.FAMILY_SHEET_URL }}
+      
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add data/*.json
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update cricket data from Google Sheets [$(date +'%Y-%m-%d %H:%M')]"
+            git push
+            echo "✅ Data updated and pushed successfully!"
+          fi

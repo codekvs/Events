@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "Rohit Yadav",
+    "Role": "Tournament Director",
+    "Description": "Main organiser & sponsor coordinator",
+    "Image_URL": "https://images.unsplash.com/photo-1560272564-c83b19b38190?w=800"
+  },
+  {
+    "Name": "Amit Verma",
+    "Role": "Vice President",
+    "Description": "Ground & umpires in-charge",
+    "Image_URL": "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=800"
+  },
+  {
+    "Name": "Vikram Singh",
+    "Role": "Treasurer",
+    "Description": "Finance & prize distribution",
+    "Image_URL": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800"
+  },
+  {
+    "Name": "Priya Sharma",
+    "Role": "Media & Social Media Head",
+    "Description": "Photography & live updates",
+    "Image_URL": "https://images.unsplash.com/photo-1593105095731-0a6c5e3b7e8f?w=800"
+  }
+]
